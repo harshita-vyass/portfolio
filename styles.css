@@ -108,7 +108,7 @@ main {
   color: var(--WHITE_2);
   background-color: var(--DARK_RED);
   border: none;
-  padding: 15px;
+  padding: 20px;
   cursor: pointer;
   border-radius: 2rem;
 }
@@ -360,6 +360,10 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     min-width:70%;
+  }
+
+  .resume {
+    padding: 10px;
   }
 
   .contacts h1{
