@@ -10,12 +10,13 @@
   --DARK_RED: #441f2b;
   --LIGHT_BLUE: #45567d;
   --LIGHT_WHITE: #f0f0f0;
-  --WHITE_2: #c2b8b2;
+  --WHITE_2: #dfd4d4;
 }
 
 body {
   background-color: var(--WHITE_2);
   color: var(--DARK_RED);
+  font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -161,7 +162,6 @@ main {
 .project-list {
   display: grid;
   padding: 0 10rem;
-  /* width: 70%; */
   margin: 3rem auto;
   justify-content: space-evenly;
   justify-items: center;
@@ -172,10 +172,13 @@ main {
 }
 
 .project-tile {
-  /* width: 400px; */
   border: 1px solid var(--DARK_RED);
   background-color: var(--DARK_RED);
   border-radius: 1.7rem;
+}
+
+.project-tile i {
+  display: none;
 }
 
 .project-tile img {
@@ -208,7 +211,6 @@ main {
   margin: auto;
   font-size: 1.2rem;
   transition: background 0.3s ease-out;
-  color: #beaea5;
   border-radius: 2rem;
 }
 
@@ -276,17 +278,14 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 1450px) { 
-
+@media (max-width: 1450px) {
   .project-list {
     padding: 0 3rem;
     gap: 2rem;
   }
 }
 
-
 @media (max-width: 1100px) {
-
   .project-list {
     padding: 0 2rem;
     gap: 2rem;
@@ -305,24 +304,19 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
   }
-
 }
 
-
-@media (max-width: 850px){
-
+@media (max-width: 850px) {
   .heading-section p {
     width: 80%;
   }
 
   .skills article {
-    width:70%;
+    width: 70%;
   }
 }
 
-
 @media (max-width: 600px) {
-
   #nav ul {
     margin-right: 0;
     width: 100vw;
@@ -334,12 +328,13 @@ footer {
     min-height: 2rem;
   }
 
-  .heading-section h1{
+  .heading-section h1 {
     font-size: 2.5rem;
   }
 
   .heading-section p {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .title {
@@ -351,24 +346,27 @@ footer {
     min-width: 200px;
   }
 
-  .skills article {
-    flex-direction: column;
-  }
- 
-  .project-list {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    min-width:70%;
-  }
-
   .resume {
     padding: 10px;
   }
 
-  .contacts h1{
-    font-size: 2.5rem;
+  .skills article {
+    flex-direction: column;
   }
 
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    min-width: 70%;
+  }
 
+  .project-tile i {
+    display: inline;
+    font-size: smaller;
+  }
+
+  .contacts h1 {
+    font-size: 2.5rem;
+  }
 }
