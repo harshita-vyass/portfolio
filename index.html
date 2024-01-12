@@ -9,9 +9,12 @@
       src="https://kit.fontawesome.com/30a580d890.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Harshita Vyas</title>
   </head>
@@ -27,22 +30,25 @@
     <main>
       <section id="welcome-section">
         <div class="heading-section">
-          <h1>Hey, I am Harshita</h1>
+          <div class="introduction-section">
+            <h1>Hey, I am Harshita</h1>
+            <h3 class="designation">Front-End Developer</h3>
+          </div>
           <p>
             Welcome to my corner of the web! I am a dynamic and motivated
             front-end developer, eager to contribute my skills to the
-            ever-evolving world of web development. I am actively seeking
-            opportunities to contribute my skills and grow as a front-end
-            developer. Let's connect and explore how my enthusiasm for coding
-            can add value to your team.
+            ever-evolving world of web development.
+            <br /><br />
+            I am actively seeking opportunities to contribute my skills and grow
+            as a front-end developer. Let's connect and explore how my
+            enthusiasm for coding can add value to your team.
           </p>
           <a href="assets/docs/Harshita-Vyas-Resume.pdf" download
             ><button class="resume">
-              <i class="fa-solid fa-file-arrow-down"></i> &nbsp;Download Resume
+              <i class="fa-solid fa-file-arrow-down"></i> Resume
             </button></a
           >
         </div>
-
       </section>
 
       <section class="skills" id="skills">
@@ -50,21 +56,26 @@
         <article>
           <div>
             <h2>Technologies</h2>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Javascript</p>
-            <p>TypeScript</p>
-            <p>Npm</p>
-            <p>ReactJs</p>
-            <p>Bootstrap</p>
+            <div class="skill-list">
+              <p>ReactJs</p>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Javascript</p>
+              <p>TypeScript</p>
+              <p>ES6</p>
+              <p>Bootstrap</p>
+            </div>
           </div>
 
           <div>
             <h2>Tools</h2>
-            <p>Git & GitHub</p>
-            <p>VS code</p>
-            <p>Chrome DevTools</p>
-            <p>Lighthouse</p>
+            <div class="skill-list">
+              <p>Git & GitHub</p>
+              <p>VS code</p>
+              <p>Chrome DevTools</p>
+              <p>Lighthouse</p>
+              <p>NPM</p>
+            </div>
           </div>
         </article>
       </section>
@@ -72,13 +83,13 @@
       <section id="projects">
         <h2 class="title"><b>Projects</b></h2>
         <div class="project-list">
-          
           <a
             href="https://task-tracker-1-0.netlify.app"
             class="project-tile"
             target="_blank"
             ><img src="assets/images/task-tracker.jpeg" />
-            <span class="code">&lt; </span>Task Tracker <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span class="code">&lt; </span>Task Tracker
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
             <span class="code">/&gt;</span></a
           >
           <a
@@ -86,7 +97,8 @@
             target="_blank"
             class="project-tile"
             ><img src="assets/images/word-counter.jpeg" />
-            <span class="code">&lt; </span>Word Counter <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span class="code">&lt; </span>Word Counter
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
             <span class="code">/&gt;</span></a
           >
           <a
@@ -94,7 +106,8 @@
             target="_blank"
             class="project-tile"
             ><img src="assets/images/notification-page.jpeg" />
-            <span class="code">&lt; </span>Notifications Page <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span class="code">&lt; </span>Notifications Page
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
             <span class="code">/&gt;</span></a
           >
           <a
@@ -102,7 +115,8 @@
             class="project-tile"
             target="_blank"
             ><img src="assets/images/weather-forecast.jpeg" />
-            <span class="code">&lt; </span>Weather App <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span class="code">&lt; </span>Weather App
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
             <span class="code">/&gt;</span></a
           >
           <a
@@ -110,7 +124,8 @@
             target="_blank"
             class="project-tile"
             ><img src="assets/images/calculator.jpeg" />
-            <span class="code">&lt; </span>Calculator <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span class="code">&lt; </span>Calculator
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
             <span class="code">/&gt;</span></a
           >
           <a
@@ -118,12 +133,16 @@
             target="_blank"
             class="project-tile"
             ><img src="assets/images/survey-form.jpeg" />
-            <span class="code">&lt; </span> Survey Form <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span class="code">&lt; </span> Survey Form
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
             <span class="code">/&gt;</span></a
           >
         </div>
 
-        <a href="https://github.com/harshita-vyass" id="profile-link" target="_blank"
+        <a
+          href="https://github.com/harshita-vyass"
+          id="profile-link"
+          target="_blank"
           >Show all <i class="fas fa-chevron-right"> </i
         ></a>
       </section>
