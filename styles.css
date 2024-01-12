@@ -21,7 +21,7 @@ body {
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -141,6 +141,7 @@ main {
   flex-direction: row;
   gap: 2rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .skills article div p {
@@ -349,12 +350,6 @@ footer {
     min-width: 200px;
   }
 
-  .designation {
-    display: flex;
-    gap: 0rem;
-    margin-top: 0rem;
-    padding-top: 0rem;
-  }
 
   .resume {
     padding: 10px;
@@ -362,6 +357,10 @@ footer {
 
   .skills article {
     flex-direction: column;
+  }
+
+  .skill-list{
+    gap:1rem;
   }
 
   .project-list {
