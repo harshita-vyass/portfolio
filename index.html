@@ -1,182 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="assets/images/fevicon.png" />
-    <script
-      src="https://kit.fontawesome.com/30a580d890.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Harshita Vyas</title>
-  </head>
-  <body>
-    <nav id="nav">
-      <div class="logo"><img src="assets/images/logoSpaced.png" width="100" /></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshita Vyas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/30a580d890.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav id="nav">
+    <ul>
+      <li><a href="#welcome-section">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div id="theme-switch" class="switch-container">
+      <div class="sun"></div>
+      <label class="switch">
+        <input type="checkbox" id="themeSwitch" aria-label="Theme switch">
+        <span class="slider round"></span>
+      </label>
+      <div class="moon"></div>
+    </div>
+  </nav>
+  <section id="welcome-section">
+    <div class="heading-section">
+      <div class="introduction-section">
+        <h1>
+          Hey, I am Harshita
+          <span class="designation">{ React Js Developer }</span>
+        </h1>
+      </div>
+      <p>
+        "Your vision, my code."
+        <br /><br />
+        Specialize in building engaging, responsive web applications with
+        React.js, ensuring clean design, intuitive navigation, and innovative
+        solutions for businesses and users alike.
+      </p>
+      <a href="assets/docs/Harshita-Vyas-Resume.pdf" download><button class="resume">
+          <i class="fa-solid fa-file-arrow-down"></i> Resume
+        </button></a>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="about-section">
+      <h2>About Me</h2>
+      <p>
+        I'm Harshita, a passionate React.js developer dedicated to creating
+        dynamic and responsive web applications. With a strong foundation in
+        front-end development, I specialize in crafting user-friendly
+        interfaces and delivering high-quality solutions. I thrive on
+        challenges and am always eager to learn new technologies to enhance my
+        skills. When I'm not coding, I enjoy exploring the latest tech trends
+        and experimenting with creative designs.
+      </p>
+    </div>
+    <div class="info-section">
+      <h2>Basic Information</h2>
       <ul>
-        <li><a href="#welcome-section">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><i class="fa-solid fa-calendar-days"></i> 22 Oct, 1998</li>
+        <li>
+          <i class="fa-solid fa-envelope-open"></i> harshitavyas39@gmail.com
+        </li>
+        <li><i class="fa-solid fa-phone"></i> +91 9352447673</li>
+        <li><i class="fa-solid fa-location-dot"></i> Jodhpur, India</li>
+        <li><i class="fa-solid fa-language"></i> English, Hindi</li>
       </ul>
-      <a href="#contact"
-      ><button class="contactMe">
-         Contact
-      </button></a
-    >
-    </nav>
-    <main>
-      <section id="welcome-section">
-        <div class="heading-section">
-          <div class="introduction-section">
-            <h1>Hey, I am Harshita</h1>
-            <h3 class="designation">Front-End Developer</h3>
-          </div>
-          <p>
-            Welcome to my corner of the web! I am a dynamic and motivated
-            front-end developer, eager to contribute my skills to the
-            ever-evolving world of web development.
-            <br /><br />
-            I am actively seeking opportunities to contribute my skills and grow
-            as a front-end developer. Let's connect and explore how my
-            enthusiasm for coding can add value to your team.
-          </p>
-          <a href="assets/docs/Harshita-Vyas-Resume.pdf" download
-            ><button class="resume">
-              <i class="fa-solid fa-file-arrow-down"></i> Resume
-            </button></a
-          >
+    </div>
+  </div>
+
+  <section class="experience">
+    <div class="experience-section">
+      <h2>Experience</h2>
+      <div class="experience-details-container">
+        <div class="experience-nav">
+          <button id="defaultOpen" class="tab-links" onclick="openTab(event, 'expTab1')">
+            Vigorous
+          </button>
+          <button class="tab-links" onclick="openTab(event, 'expTab2')">
+            Anand Rathi
+          </button>
         </div>
-      </section>
-
-      <section class="skills" id="skills">
-        <h2 class="title"><b>Skills</b></h2>
-        <article>
-          <div>
-            <h2>Technologies</h2>
-            <div class="skill-list">
-              <p>ReactJs</p>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>Javascript</p>
-              <p>TypeScript</p>
-              <p>ES6</p>
-              <p>Bootstrap</p>
+        <div class="experience-description">
+          <div id="expTab1" class="tab-content" style="display: block">
+            <div>
+              <p class="designation">
+                React Developer,
+                <span class="section-item-name job-company">Vigorous IT Solutions</span>
+              </p>
+              <div class="job-duration">Sep 2024 - Present</div>
             </div>
-          </div>
-
-          <div>
-            <h2>Tools</h2>
-            <div class="skill-list">
-              <p>Git & GitHub</p>
-              <p>VS code</p>
-              <p>NPM</p>
-              <p>Lighthouse</p>
-              <p>Chrome DevTools</p>
+            <ul class="section-item-description">
+              <li>
+                Mentored junior developers and conducted code reviews,
+                improving code quality and knowledge sharing across the team.
+              </li>
+              <li>
+                Participated in design discussions regarding application
+                architecture, feature implementation, or any other relevant
+                topic as required.
+              </li>
+            </ul>
+            <br />
+            <div>
+              <p class="designation">React Intern</p>
+              <div class="job-duration">Mar 2024 - Sep 2024</div>
             </div>
+            <ul class="section-item-description">
+              <li>
+                Developed and maintained single-page web applications (SPA)
+                using Angular 10/11, RxJS, Material Design, and NgRx for a
+                social media platform for healthcare professionals.
+              </li>
+              <li>
+                Led the development of the Admin panel for the application.
+              </li>
+              <li>
+                Integrated RESTful APIs, and ensure code quality with Sonar.
+              </li>
+              <li>
+                Collaborated with other developers to implement new features
+                in a way that is consistent with existing codebase conventions
+                in an Agile environment.
+              </li>
+            </ul>
           </div>
-        </article>
-      </section>
-
-      <section id="projects">
-        <h2 class="title"><b>Projects</b></h2>
-        <div class="project-list">
-          <a
-            href="https://task-tracker-1-0.netlify.app"
-            class="project-tile"
-            target="_blank"
-            ><img src="assets/images/task-tracker.jpeg" />
-            <span class="code">&lt; </span>Task Tracker
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            <span class="code">/&gt;</span></a
-          >
-          <a
-            href="https://harshita-vyass.github.io/word-counter/index.html"
-            target="_blank"
-            class="project-tile"
-            ><img src="assets/images/word-counter.jpeg" />
-            <span class="code">&lt; </span>Word Counter
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            <span class="code">/&gt;</span></a
-          >
-          <a
-            href="https://harshita-vyass.github.io/notifications-page-main/"
-            target="_blank"
-            class="project-tile"
-            ><img src="assets/images/notification-page.jpeg" />
-            <span class="code">&lt; </span>Notifications Page
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            <span class="code">/&gt;</span></a
-          >
-          <a
-            href="https://weather-app-2211.netlify.app"
-            class="project-tile"
-            target="_blank"
-            ><img src="assets/images/weather-forecast.jpeg" />
-            <span class="code">&lt; </span>Weather App
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            <span class="code">/&gt;</span></a
-          >
-          <a
-            href="https://harshita-vyass.github.io/calculator_app/calculator.html"
-            target="_blank"
-            class="project-tile"
-            ><img src="assets/images/calculator.jpeg" />
-            <span class="code">&lt; </span>Calculator
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            <span class="code">/&gt;</span></a
-          >
-          <a
-            href="https://harshita-vyass.github.io/survey-form/"
-            target="_blank"
-            class="project-tile"
-            ><img src="assets/images/survey-form.jpeg" />
-            <span class="code">&lt; </span> Survey Form
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            <span class="code">/&gt;</span></a
-          >
+          <div id="expTab2" class="tab-content" style="display: none">
+            <div>
+              <p class="designation">
+                Software Developer,
+                <span class="section-item-name job-company">Anand Rathi IT Pvt Ltd</span>
+              </p>
+              <div class="job-duration">Apr 2022 - Oct 2022</div>
+            </div>
+            <ul class="section-item-description">
+              <li>
+                Worked with cross-functional teams to design and implement new
+                features using Angular 7/8 as per client requirements for the
+                application.
+              </li>
+              <li>
+                Responsible for maintaining and enhancing the existing code
+                which also included working on AngularJS pages as it is a
+                hybrid application.
+              </li>
+              <li>
+                Implemented new features like primeNG library for UI,
+                Internationalization, and File handling with S3.
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <a
-          href="https://github.com/harshita-vyass"
-          id="profile-link"
-          target="_blank"
-          >Show all <i class="fas fa-chevron-right"> </i
-        ></a>
-      </section>
+  <section class="project-section">
+    <h2 class="title">Latest Work</h2>
+    <div class="projects">
+      <div class="project" onclick="toggleExpand(0)" id="project-0">
+        <div class="overlay"></div>
+        <div class="content">
+          <div>
+            <p>Calculator</p>
+          </div>
+          <a href="https://harshita-vyass.github.io/calculator_app/calculator.html" target="_blank"><img
+              src="assets/icons/link.svg" alt="link"></a>
+        </div>
+      </div>
+      <div class="project" onclick="toggleExpand(1)" id="project-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div>
+            <p>Notifications</p>
+          </div>
+          <img src="assets/icons/link.svg" alt="link">
+        </div>
+      </div>
+      <div class="project" onclick="toggleExpand(2)" id="project-2">
+        <div class="overlay"></div>
+        <div class="content">
+          <div>
+            <p>Task Tracker</p>
+          </div>
+          <a href="https://harshita-vyass.github.io/calculator_app/calculator.html" target="_blank"><img
+              src="assets/icons/link.svg" alt="link"></a>
+        </div>
+      </div>
+      <div class="project" onclick="toggleExpand(3)" id="project-3">
+        <div class="overlay"></div>
+        <div class="content flex">
+          <div>
+            <p>Weather App</p>
+          </div>
+          <img src="assets/icons/link.svg" alt="link">
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <section class="contacts" id="contact">
-        <h1>Let's work together...</h1>
-        <ul class="contact">
-          <li class="contact-details">
-            <a href="https://github.com/harshita-vyass/" target="_blank"
-              ><i class="fab fa-github"></i>&nbsp;GitHub</a
-            >
-          </li>
-          <li class="contact-details">
-            <a href="https://twitter.com/Harshita181110" target="_blank"
-              ><i class="fab fa-twitter"></i>&nbsp;Twitter</a
-            >
-          </li>
-          <li class="contact-details">
-            <a href="mailto:harshitavyas39@gmail.com" target="_blank"
-              ><i class="fas fa-at"></i>&nbsp;Send a mail</a
-            >
-          </li>
-        </ul>
-      </section>
-    </main>
+  <section class="tech-stack">
+    <h2>Tech Stack</h2>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <p>
+          <i class="fa-brands fa-html5" style="color: #f04c4c"></i> HTML 5
+        </p>
+      </div>
+      <div class="tech-item">
+        <p>
+          <i class="fa-brands fa-css3-alt" style="color: #2f66c6"></i> CSS 3
+        </p>
+      </div>
+      <div class="tech-item">
+        <p>
+          <i class="fa-brands fa-bootstrap" style="color: #4c1ae0"></i>
+          Bootstrap 4
+        </p>
+      </div>
 
-    <footer class="footer">
-      <p>© Created by <b>Harshita Vyas</b></p>
-    </footer>
-  </body>
+      <div class="tech-item">
+        <p>
+          <i class="fa-brands fa-js" style="color: #e1b619"></i> JavaScript
+        </p>
+      </div>
+      <div class="tech-item">
+        <p>
+          <i class="fa-brands fa-html5" style="color: #f04c4c"></i> TypeScript
+        </p>
+      </div>
+      <div class="tech-item">
+        <p><i class="fa-brands fa-react" style="color: #41cbe6"></i> React</p>
+      </div>
+
+      <div class="tech-item">
+        <p>
+          <i class="fa-brands fa-github" style="color: #e1b619"></i> GitHub
+        </p>
+      </div>
+      <div class="tech-item">
+        <p>
+          <i class="fa-brands fa-chrome" style="color: #e1b619"></i> Chrome
+          DevTools
+        </p>
+      </div>
+      <div class="tech-item">
+        <p>
+          <i class="fa-brands fa-angular" style="color: #e1b619"></i> VS Code
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="para">
+      <p>Developed by Harshita Vyas</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
+        porro maiores quaerat inventore asperiores unde debitis eum, laborum
+        impedit nisi praesentium quos corrupti neque similique quisquam quas
+        nostrum iste voluptate?
+      </p>
+    </div>
+    <div class="list">
+      <p>Social</p>
+      <ul>
+        <li><i class="fa-brands fa-linkedin-in"></i></li>
+        <li><a href="https://github.com/harshita-vyass" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        <li><i class="fa-solid fa-envelope-open"></i></li>
+        <li><i class="fa-solid fa-phone"></i></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
