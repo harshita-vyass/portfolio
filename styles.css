@@ -291,7 +291,7 @@ a {
 }
 
 #project-1 {
-  background-image: url("/assets/images/food-recipe.jpeg");
+  background-image: url("assets/images/food-recipe.jpeg");
   background-size: cover;
 }
 
