@@ -43,9 +43,9 @@ function toggleExpand(index) {
 
   destinations.forEach((destination, i) => {
     if (i === index) {
-      destination.style.width = '500px'; // Expand the clicked/hovered destination
+      destination.style.width = '700px'; // Expand the clicked/hovered destination
     } else {
-      destination.style.width = '250px'; // Collapse all others
+      destination.style.width = '150px'; // Collapse all others
     }
   });
 
@@ -67,3 +67,27 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleExpand(0); // Optionally expand the first destination on load
   addHoverEffect();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+  const navLinkItems = document.querySelectorAll(".nav-link");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  navLinkItems.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+    });
+  });
+});
+
+  const closeBtn = document.querySelector(".menu-bar");
+    const navLinks = document.getElementById("nav-links");
+
+
+  closeBtn.addEventListener("click", () => {
+    navLinks.classList.remove("active"); 
+  });
